@@ -13,8 +13,6 @@ public class TestOrder1 {
 		
 		order.bookTicket(10);
 		
-		
-		
-	}
+		}
 
 }

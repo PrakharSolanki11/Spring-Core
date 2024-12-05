@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="testBean" class="com.rays.child.TestBean">
+	    <property name="name" value="Parent"></property>
+		<property name="age" value="100"></property>
+	</bean>
+
+	<bean id="derivedTestBean" class="com.rays.child.DerivedTestBean"
+		parent="testBean">
+		<property name="name" value="child"></property>
+		<property name="age" value="10"></property>
+	</bean>
+
+
+</beans>
